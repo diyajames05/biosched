@@ -1,0 +1,61 @@
+rep,algorithm,evidence,avg_waiting,avg_response,avg_turnaround,max_waiting,cpu_utilization
+0,FCFS,hardware,13.0686,12.4505,35.475,50.5286,0.76243
+0,FCFS,simulation (replayed bursts),10.3412,10.3412,32.7476,44.1255,0.776335
+0,FCFS,simulation (profiled bursts),4.35684,4.35684,20.5856,32.2447,0.586919
+0,SJF,hardware,5.79947,5.18488,26.9634,60.0639,0.726774
+0,SJF,simulation (replayed bursts),4.25802,4.25802,25.422,51.2506,0.74174
+0,SJF,simulation (profiled bursts),2.22939,2.22939,18.4582,43.4963,0.586919
+0,Priority,hardware,8.09491,7.5172,29.3594,50.2725,0.73457
+0,Priority,simulation (replayed bursts),6.12,6.12,27.3845,47.0235,0.740107
+0,Priority,simulation (profiled bursts),2.87656,2.87656,19.1053,39.0365,0.586919
+0,Adaptive-NP,hardware,6.41745,5.86076,27.7981,78.3165,0.697733
+0,Adaptive-NP,simulation (replayed bursts),4.91261,4.91261,26.2933,74.6038,0.703414
+0,Adaptive-NP,simulation (profiled bursts),2.3795,2.3795,18.6083,42.4809,0.586919
+1,SJF,hardware,4.83094,4.28519,26.0707,54.3841,0.738962
+1,SJF,simulation (replayed bursts),3.41052,3.41052,24.6503,51.5399,0.74387
+1,SJF,simulation (profiled bursts),2.22939,2.22939,18.4582,43.4963,0.586919
+1,Priority,hardware,8.26095,7.6696,29.161,59.2632,0.712569
+1,Priority,simulation (replayed bursts),6.2654,6.2654,27.1654,56.3695,0.717287
+1,Priority,simulation (profiled bursts),2.87656,2.87656,19.1053,39.0365,0.586919
+1,Adaptive-NP,hardware,5.94299,5.38265,27.3163,58.2437,0.742318
+1,Adaptive-NP,simulation (replayed bursts),4.35816,4.35816,25.7315,56.8956,0.744642
+1,Adaptive-NP,simulation (profiled bursts),2.3795,2.3795,18.6083,42.4809,0.586919
+1,FCFS,hardware,12.5401,12.0108,33.8973,50.7754,0.729445
+1,FCFS,simulation (replayed bursts),10.3688,10.3688,31.726,48.7832,0.738731
+1,FCFS,simulation (profiled bursts),4.35684,4.35684,20.5856,32.2447,0.586919
+2,Priority,hardware,9.21007,8.65863,30.8988,55.9287,0.753653
+2,Priority,simulation (replayed bursts),6.12338,6.12338,27.8121,53.1066,0.758612
+2,Priority,simulation (profiled bursts),2.87656,2.87656,19.1053,39.0365,0.586919
+2,Adaptive-NP,hardware,6.98019,6.40849,28.6677,77.5059,0.718098
+2,Adaptive-NP,simulation (replayed bursts),5.25968,5.25968,26.9472,80.5298,0.713337
+2,Adaptive-NP,simulation (profiled bursts),2.3795,2.3795,18.6083,42.4809,0.586919
+2,FCFS,hardware,13.9305,13.4078,35.6131,55.7694,0.721596
+2,FCFS,simulation (replayed bursts),11.9933,11.9933,33.676,50.1987,0.727072
+2,FCFS,simulation (profiled bursts),4.35684,4.35684,20.5856,32.2447,0.586919
+2,SJF,hardware,6.83795,6.29017,29.4036,59.5244,0.750352
+2,SJF,simulation (replayed bursts),5.11916,5.11916,27.6849,56.903,0.754738
+2,SJF,simulation (profiled bursts),2.22939,2.22939,18.4582,43.4963,0.586919
+3,Adaptive-NP,hardware,8.18574,7.62601,30.7652,88.0987,0.689715
+3,Adaptive-NP,simulation (replayed bursts),6.41308,6.41308,28.9926,87.7294,0.690234
+3,Adaptive-NP,simulation (profiled bursts),2.3795,2.3795,18.6083,42.4809,0.586919
+3,FCFS,hardware,11.762,11.2104,32.3423,49.3297,0.712846
+3,FCFS,simulation (replayed bursts),9.89764,9.89764,30.478,48.2168,0.72117
+3,FCFS,simulation (profiled bursts),4.35684,4.35684,20.5856,32.2447,0.586919
+3,SJF,hardware,7.86409,7.32571,30.5779,90.5083,0.689617
+3,SJF,simulation (replayed bursts),5.81693,5.81693,28.5308,80.0723,0.704499
+3,SJF,simulation (profiled bursts),2.22939,2.22939,18.4582,43.4963,0.586919
+3,Priority,hardware,11.1935,10.6359,32.5637,61.5899,0.736422
+3,Priority,simulation (replayed bursts),8.25049,8.25049,29.6206,59.5747,0.736475
+3,Priority,simulation (profiled bursts),2.87656,2.87656,19.1053,39.0365,0.586919
+4,FCFS,hardware,11.1078,10.5893,31.6938,47.3973,0.703854
+4,FCFS,simulation (replayed bursts),9.30118,9.30118,29.8872,44.2861,0.709168
+4,FCFS,simulation (profiled bursts),4.35684,4.35684,20.5856,32.2447,0.586919
+4,SJF,hardware,8.18666,7.6482,30.2521,94.3577,0.695674
+4,SJF,simulation (replayed bursts),7.00443,7.00443,29.0699,79.8883,0.717495
+4,SJF,simulation (profiled bursts),2.22939,2.22939,18.4582,43.4963,0.586919
+4,Priority,hardware,7.52937,7.00524,28.8764,52.0617,0.730226
+4,Priority,simulation (replayed bursts),5.74652,5.74652,27.0935,50.0619,0.733571
+4,Priority,simulation (profiled bursts),2.87656,2.87656,19.1053,39.0365,0.586919
+4,Adaptive-NP,hardware,6.77171,6.21467,28.6548,77.0153,0.724266
+4,Adaptive-NP,simulation (replayed bursts),5.11508,5.11508,26.9982,75.0571,0.727409
+4,Adaptive-NP,simulation (profiled bursts),2.3795,2.3795,18.6083,42.4809,0.586919

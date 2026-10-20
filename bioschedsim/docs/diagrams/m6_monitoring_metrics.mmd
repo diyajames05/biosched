@@ -1,0 +1,11 @@
+flowchart TD
+  A([Simulation events]) --> B[Event logger<br/>ARRIVE, DISPATCH, PREEMPT,<br/>QUANTUM_EXPIRE, COMPLETE,<br/>IDLE_START, IDLE_END]
+  A --> C[Segment recorder<br/>core, task, start, end]
+  A --> D[Idle-interval recorder]
+  B & C & D --> E[Per-task metrics<br/>T = C − A, W = T − B, R = S − A,<br/>slowdown, deadline lateness]
+  E --> F["System metrics<br/>throughput, utilisation / (M·T),<br/>idle fraction, Jain fairness,<br/>starvation, percentiles"]
+  F --> G[Aggregate over seeds<br/>mean, 95 % CI]
+  G --> H[Tables:<br/>averages, percentiles,<br/>fairness and starvation]
+  G --> I[Graphs:<br/>bars, distributions,<br/>sweeps vs tasks / length / cores]
+  C & D --> J[Gantt charts<br/>per algorithm]
+  B --> K[(Task-level and<br/>event logs CSV)]

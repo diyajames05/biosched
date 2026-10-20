@@ -1,0 +1,31 @@
+{
+  "input": {
+    "file": "results/sample_genome.fa",
+    "parser": "Bio.SeqIO",
+    "records_read": 3,
+    "records_valid": 3,
+    "rejected": [],
+    "total_bases": 1200000,
+    "gc_content": 0.45950083333333336
+  },
+  "machine": {
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 16,
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "timer": "time.perf_counter, median of repeats, ms",
+    "memory_total_gb": 15.31,
+    "physical_cores": 12,
+    "cpu_freq_mhz": 535
+  },
+  "monitor": {
+    "cpu_percent_mean": 5.5,
+    "cpu_percent_max": 33.3,
+    "mem_percent_mean": 63.3,
+    "samples": 80
+  },
+  "repeats": 3,
+  "size_scale": 0.3,
+  "fingerprint": "dc5ea7a166b6ef8251f3ce586de9d409fec5add00d824f543488457ddba839bd"
+}

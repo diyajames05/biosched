@@ -1,0 +1,39 @@
+{
+  "coef": {
+    "gc_content": [
+      0.016805180648125806,
+      6.882649105831884e-06
+    ],
+    "kmer_count": [
+      -0.19345694546213904,
+      0.000142014970417244,
+      4.2703008746714074e-06
+    ],
+    "motif_search": [
+      0.04101752801725063,
+      0.00030894101302245515,
+      1.4038720069889962e-06
+    ],
+    "alignment": [
+      0.0668489829728895,
+      0.0001752277905603115
+    ]
+  },
+  "r2": {
+    "gc_content": 0.997267777584343,
+    "kmer_count": 0.9985235027287531,
+    "motif_search": 0.9994928251817812,
+    "alignment": 0.9794494674309742
+  },
+  "machine": {
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "processor": "x86_64",
+    "cpu_count": 16,
+    "python": "3.13.5",
+    "implementation": "CPython",
+    "timer": "time.perf_counter, median of repeats, ms",
+    "memory_total_gb": 15.31,
+    "physical_cores": 12,
+    "cpu_freq_mhz": 702
+  }
+}

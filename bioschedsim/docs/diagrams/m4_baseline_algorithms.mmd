@@ -1,0 +1,15 @@
+flowchart TD
+  A([Core becomes free<br/>or event occurs]) --> B{Ready queue empty?}
+  B -- yes --> Z([Core idle])
+  B -- no --> C{Policy}
+  C -- FCFS --> D[Key = arrival time]
+  C -- SJF --> E[Key = estimated burst]
+  C -- SRTF --> F[Key = estimated remaining<br/>preemptive]
+  C -- Round Robin --> G[Key = queue entry order<br/>quantum q]
+  C -- Priority --> H[Key = priority 1 = highest<br/>then arrival]
+  D & E & F & G & H --> I[Select smallest key<br/>ties: arrival, then ID]
+  I --> J[Dispatch to core]
+  J --> K{Event}
+  K -- completion --> L[Terminated]
+  K -- quantum expires<br/>RR --> M[Back to tail of ready queue] --> B
+  K -- better task arrives<br/>SRTF --> N[Preempt to ready queue] --> B

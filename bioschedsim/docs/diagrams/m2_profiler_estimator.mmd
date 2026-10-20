@@ -1,0 +1,15 @@
+flowchart TD
+  A[(Task parameters<br/>L, k, m, L1·L2)] --> B[Calibration runs<br/>execute each operation<br/>at several input sizes]
+  B --> C[Time with perf_counter<br/>median of 3 repeats]
+  C --> D[Least-squares fit of the<br/>complexity-based cost model<br/>per category + R²]
+  D --> E[(Cost model JSON<br/>+ machine information)]
+  A --> F[Predict estimated burst<br/>from parameters only]
+  E --> F
+  A --> G{Workload type}
+  G -- synthetic --> H[Actual burst =<br/>estimate × log-normal error σ]
+  G -- dataset --> I[Execute task and measure<br/>actual burst + hardware monitor]
+  F --> J[TaskInfo<br/>scheduler-visible: estimate only]
+  H --> K[Actual burst<br/>kept by simulator only]
+  I --> K
+  J --> L([Scheduler])
+  K --> M([Simulation engine and metrics])

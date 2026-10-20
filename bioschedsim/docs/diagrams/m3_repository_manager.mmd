@@ -1,0 +1,15 @@
+flowchart TD
+  A[(Generated or loaded<br/>task list)] --> B[validate_workload<br/>unique IDs, arrival ≥ 0,<br/>bursts > 0, priority 1-5,<br/>deadline ≥ arrival]
+  B -- error --> X([Reject workload])
+  B -- ok --> C[Freeze as immutable tuple<br/>of Task records]
+  C --> D[SHA-256 fingerprint]
+  E[ExperimentConfig<br/>cores, quantum, context switch,<br/>seeds, logging] --> F
+  D --> F[WorkloadManager]
+  F --> G{Next algorithm?}
+  G -- yes --> H[Verify fingerprint unchanged]
+  H --> I[Fresh Simulator +<br/>fresh run-time task states]
+  I --> J[Run and check invariants]
+  J --> K[Store result with fingerprint]
+  K --> G
+  G -- no --> L[Assert all runs share<br/>one fingerprint]
+  L --> M[(Results per algorithm)]

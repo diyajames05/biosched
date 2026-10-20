@@ -1,0 +1,12 @@
+flowchart TD
+  A[(Results from all seeds)] --> B[Tidy table<br/>seed × algorithm × metric]
+  B --> C[Summary: mean, std,<br/>95 % CI, median]
+  B --> D[Paired differences<br/>Adaptive − baseline per seed]
+  D --> E{Baseline ≈ 0?}
+  E -- no --> F[Relative change %<br/>+ absolute difference with CI]
+  E -- yes --> G[Absolute difference only]
+  F & G --> H[Wilcoxon signed-rank p-value]
+  C & H --> I{Evidence type}
+  I -- simulation --> J[Label: simulation]
+  I -- real execution --> K[Label: hardware]
+  J & K --> L[(RESULTS.md, CSVs, plots)]

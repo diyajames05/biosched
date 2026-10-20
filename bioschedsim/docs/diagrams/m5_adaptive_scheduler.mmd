@@ -1,0 +1,16 @@
+flowchart TD
+  A([Decision point:<br/>free core or quantum expiry]) --> B[Read ready queue<br/>running and completed tasks excluded]
+  B --> C[Feature normalisation<br/>r_min, r_max over ready set,<br/>running mean burst b̄]
+  C --> D["Burst score<br/>s = 1 − ln(r / r_min) / ln(r_max / r_min)"]
+  C --> E["Aging score<br/>a = W / (c · b̄)"]
+  C --> F["Priority score<br/>p = (5 − priority) / 4"]
+  C --> G["Deadline urgency u<br/>0 if none, 1 if late,<br/>else b̄ / (b̄ + slack)"]
+  D & E & F & G --> H["Weighted score<br/>S = 0.45s + 0.30a + 0.15p + 0.10u"]
+  H --> I{Starvation detected?<br/>W > θ·b̄}
+  I -- yes --> J[Starving tasks first,<br/>longest-waiting first]
+  I -- no --> K[Rank by S descending]
+  J --> L[Tie-break: earlier arrival,<br/>then lower ID]
+  K --> L
+  L --> M[Dispatch decision:<br/>best task → free core<br/>prefer last core, no task on two cores]
+  M --> N[Log decision with<br/>score breakdown]
+  N --> O[Run one quantum q] --> A

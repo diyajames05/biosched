@@ -1,0 +1,15 @@
+flowchart TD
+  A([Start]) --> B{Input source?}
+  B -- FASTA file --> C[Parse records<br/>Bio.SeqIO or built-in parser]
+  C --> D[Validate each record<br/>upper-case, allowed A C G T N,<br/>minimum length]
+  D -- invalid --> E[Reject and add to<br/>validation report]
+  D -- valid --> F[(Validated sequences)]
+  B -- synthetic --> G[Generate random DNA<br/>with chosen GC bias] --> F
+  B -- metadata only --> H[Sample task parameters<br/>without sequences]
+  F --> I[Choose operation per task<br/>GC / k-mer / motif / alignment<br/>from the workload mix]
+  H --> I
+  I --> J[Sample sequence lengths<br/>log-uniform, scaled]
+  J --> K[Size class from estimate<br/>short / medium / long]
+  K --> L[Poisson arrival times<br/>for target load ρ]
+  L --> M[Assign priority 1-5<br/>and optional soft deadline]
+  M --> N[(Task list: CSV / JSON / in-memory<br/>ID, type, input size, arrival,<br/>estimated burst, actual burst, priority)]

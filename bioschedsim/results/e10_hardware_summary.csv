@@ -1,0 +1,37 @@
+evidence,algorithm,metric,n,mean,std,ci_low,ci_high,ci_half,median,min,max
+hardware,FCFS,avg_waiting,5,12.4818,1.10141,11.1142,13.8494,1.36758,12.5401,11.1078,13.9305
+hardware,FCFS,avg_response,5,11.9338,1.09278,10.5769,13.2906,1.35687,12.0108,10.5893,13.4078
+hardware,FCFS,max_waiting,5,50.7601,3.10249,46.9078,54.6123,3.85225,50.5286,47.3973,55.7694
+hardware,SJF,avg_waiting,5,6.70382,1.40433,4.96012,8.44753,1.74371,6.83795,4.83094,8.18666
+hardware,SJF,avg_response,5,6.14683,1.41911,4.38477,7.90888,1.76206,6.29017,4.28519,7.6482
+hardware,SJF,max_waiting,5,71.7677,19.0433,48.1224,95.413,23.6453,60.0639,54.3841,94.3577
+hardware,Priority,avg_waiting,5,8.85776,1.43898,7.07104,10.6445,1.78673,8.26095,7.52937,11.1935
+hardware,Priority,avg_response,5,8.29732,1.43804,6.51177,10.0829,1.78556,7.6696,7.00524,10.6359
+hardware,Priority,max_waiting,5,55.8232,4.74494,49.9316,61.7148,5.89163,55.9287,50.2725,61.5899
+hardware,Adaptive-NP,avg_waiting,5,6.85962,0.839133,5.81769,7.90154,1.04192,6.77171,5.94299,8.18574
+hardware,Adaptive-NP,avg_response,5,6.29852,0.838422,5.25748,7.33956,1.04104,6.21467,5.38265,7.62601
+hardware,Adaptive-NP,max_waiting,5,75.836,10.842,62.3739,89.2981,13.4621,77.5059,58.2437,88.0987
+simulation (profiled bursts),FCFS,avg_waiting,5,4.35684,0,4.35684,4.35684,0,4.35684,4.35684,4.35684
+simulation (profiled bursts),FCFS,avg_response,5,4.35684,0,4.35684,4.35684,0,4.35684,4.35684,4.35684
+simulation (profiled bursts),FCFS,max_waiting,5,32.2447,0,32.2447,32.2447,0,32.2447,32.2447,32.2447
+simulation (profiled bursts),SJF,avg_waiting,5,2.22939,0,2.22939,2.22939,0,2.22939,2.22939,2.22939
+simulation (profiled bursts),SJF,avg_response,5,2.22939,0,2.22939,2.22939,0,2.22939,2.22939,2.22939
+simulation (profiled bursts),SJF,max_waiting,5,43.4963,0,43.4963,43.4963,0,43.4963,43.4963,43.4963
+simulation (profiled bursts),Priority,avg_waiting,5,2.87656,0,2.87656,2.87656,0,2.87656,2.87656,2.87656
+simulation (profiled bursts),Priority,avg_response,5,2.87656,0,2.87656,2.87656,0,2.87656,2.87656,2.87656
+simulation (profiled bursts),Priority,max_waiting,5,39.0365,0,39.0365,39.0365,0,39.0365,39.0365,39.0365
+simulation (profiled bursts),Adaptive-NP,avg_waiting,5,2.3795,0,2.3795,2.3795,0,2.3795,2.3795,2.3795
+simulation (profiled bursts),Adaptive-NP,avg_response,5,2.3795,0,2.3795,2.3795,0,2.3795,2.3795,2.3795
+simulation (profiled bursts),Adaptive-NP,max_waiting,5,42.4809,0,42.4809,42.4809,0,42.4809,42.4809,42.4809
+simulation (replayed bursts),FCFS,avg_waiting,5,10.3804,1.00013,9.1386,11.6223,1.24183,10.3412,9.30118,11.9933
+simulation (replayed bursts),FCFS,avg_response,5,10.3804,1.00013,9.1386,11.6223,1.24183,10.3412,9.30118,11.9933
+simulation (replayed bursts),FCFS,max_waiting,5,47.1221,2.75888,43.6965,50.5477,3.4256,48.2168,44.1255,50.1987
+simulation (replayed bursts),SJF,avg_waiting,5,5.12181,1.38763,3.39884,6.84478,1.72297,5.11916,3.41052,7.00443
+simulation (replayed bursts),SJF,avg_response,5,5.12181,1.38763,3.39884,6.84478,1.72297,5.11916,3.41052,7.00443
+simulation (replayed bursts),SJF,max_waiting,5,63.9308,14.8231,45.5255,82.3362,18.4054,56.903,51.2506,80.0723
+simulation (replayed bursts),Priority,avg_waiting,5,6.50116,0.996645,5.26366,7.73865,1.2375,6.12338,5.74652,8.25049
+simulation (replayed bursts),Priority,avg_response,5,6.50116,0.996645,5.26366,7.73865,1.2375,6.12338,5.74652,8.25049
+simulation (replayed bursts),Priority,max_waiting,5,53.2273,4.96699,47.0599,59.3946,6.16733,53.1066,47.0235,59.5747
+simulation (replayed bursts),Adaptive-NP,avg_waiting,5,5.21172,0.753812,4.27574,6.1477,0.935981,5.11508,4.35816,6.41308
+simulation (replayed bursts),Adaptive-NP,avg_response,5,5.21172,0.753812,4.27574,6.1477,0.935981,5.11508,4.35816,6.41308
+simulation (replayed bursts),Adaptive-NP,max_waiting,5,74.9632,11.4077,60.7987,89.1276,14.1645,75.0571,56.8956,87.7294
